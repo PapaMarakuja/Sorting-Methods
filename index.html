@@ -5,8 +5,70 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sorting Methods</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;100;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="scripts.js" defer></script>
 	</head>
 	<body>
-		jksdfjksdjkh
+		<div class="container" style="height: 100vh">
+			<h1>Métodos de Ordenar</h1>
+			<div class="content">
+				<div class="sort-methods">
+					<h2>Bubble Sort</h2>
+					<textarea id="bubble-textarea" rows="20" disabled> </textarea>
+					<div class="sort-buttons">
+						<button class="sort-button" onclick="sortItems('bubble')">Ordenar</button>
+						<button class="sort-button reset" onclick="shuffle('bubble')">
+							Embaralhar
+						</button>
+					</div>
+					<div class="timestamp-bubble">
+						<p>
+							Temporizador:
+							<span id="bubble-sort-timestamp"> </span>ms
+						</p>
+					</div>
+				</div>
+				<div class="sort-methods">
+					<h2>Insertion Sort</h2>
+					<textarea id="insertion-textarea" rows="20" disabled> </textarea>
+					<div class="sort-buttons">
+						<button class="sort-button" onclick="sortItems('insertion')">
+							Ordenar
+						</button>
+						<button class="sort-button reset" onclick="shuffle('insertion')">
+							Embaralhar
+						</button>
+					</div>
+					<div class="timestamp-insertion">
+						<p>
+							Temporizador:
+							<span id="insertion-sort-timestamp"> </span>ms
+						</p>
+					</div>
+				</div>
+				<div class="sort-methods">
+					<h2>Merge Sort</h2>
+					<textarea id="merge-textarea" rows="20" disabled> </textarea>
+					<div class="sort-buttons">
+						<button class="sort-button" onclick="sortItems('merge')">Ordenar</button>
+						<button class="sort-button reset" onclick="shuffle('merge')">
+							Embaralhar
+						</button>
+					</div>
+					<div class="timestamp-merge">
+						<p>
+							Temporizador:
+							<span id="merge-sort-timestamp"> </span>ms
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
